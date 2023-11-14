@@ -43,11 +43,20 @@
   background: #d6fae3; 
   border-radius: 10px;
 }
+.shadowH:focus-visible{
+  box-shadow: 0px 0px 4px #afc7b7;
+}
 .sideSection{
   height: calc(100vh - 96px)
 }
 .addtaskShadow{
-  box-shadow: 0px 0px 6px #afc7b7;
+  box-shadow: 0px 0px 4px #afc7b7;
+}
+.tasksha{
+  box-shadow: 0px 0px 2px #afc7b7;
+}
+.myhover:hover{
+  box-shadow: 0px 0px 4px #afc7b7;
 }
 /* Handle on hover */
 /* ::-webkit-scrollbar-thumb:hover {

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { addTodo } from '../Features/todo/todoSlice';
 import { useForm } from 'react-hook-form';
 const AddTodo = () => {
-    const [register, handleSubmit] = useForm();
+    // const [register, handleSubmit] = useForm();
     const [input,setinput]=useState('');
     const dispatch=useDispatch();
     // function deleteHandler(){
@@ -20,7 +20,7 @@ const AddTodo = () => {
             <div className="addInput w-full ">
                 <input
                     type="text"
-                    className='w-full p-2 rounded-full focus-visible:outline-none focus-visible:shadow-xl text-lg'
+                    className='w-full p-2 rounded-full focus-visible:outline-none focus-visible:shadow-xl text-lg addtaskShadow'
                     placeholder='Add Task'
                     value={input}
                     onChange={(e)=>setinput(e.target.value)}

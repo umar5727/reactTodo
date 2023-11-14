@@ -2,7 +2,8 @@ import React from 'react'
 import CheckButton from './CheckButton'
 // import { UseSelector, useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { removeTodo } from '../Features/todo/todoSlice'
+import { removeTodo, addDeletedTodo, removeCompletedTdo, addDeletedTodoc } from '../Features/todo/todoSlice'
+
 const Task = (props) => {
   const dispatch=useDispatch();
 
@@ -11,10 +12,24 @@ const Task = (props) => {
 // }
   return (
     <div className='flex gap-1 h-24 my-3'>
-      <CheckButton />
-      <div className='flex-1 flex justify-between items-center bg-white rounded-xl ps-3 overflow-hidden' key={props.id}>
+      <CheckButton className='myhover tasksha' myid={props.id}/>
+      <div className='flex-1 flex justify-between items-center bg-white rounded-xl ps-3 overflow-hidden myhover tasksha' key={props.id}>
         <h4>{props.Tname}</h4>  
-        <div  className=' cursor-pointer hover:bg-green-200 w-12 h-full flex justify-center' onClick={()=>{dispatch(removeTodo(props.id))}}>
+        <div  className=' cursor-pointer hover:bg-green-200 w-16 h-full flex justify-center border-l-2' 
+        onClick={
+          ()=>{
+            dispatch(addDeletedTodo(props.id));            
+            dispatch(removeTodo(props.id));
+            // (props.checkeds &&  dispatch(removeCompletedTdo(props.id)))
+            if(props.checkeds){
+              dispatch(addDeletedTodoc(props.id));
+              dispatch(removeCompletedTdo(props.id));
+
+            }
+          
+          }
+        
+        }>
           <img src="/trash-solid.svg" alt=""  className='w-4'/>
         </div>
       </div>
