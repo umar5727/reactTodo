@@ -6,7 +6,7 @@ import Profile from './Profile'
 
 const Header = () => {
   return (
-    <header className='fixed top-0 left-0 right-6 h-24 ml-6 flex items-center justify-between px-5 bg-white'>
+    <header className='fixed top-0 left-0 right-6 h-24 ml-6 flex items-center justify-between px-5 bg-white z-50'>
       <div className='flex items-center gap-5'>
         <div className="logo w-8">
           <img src="/mainLogo.png" alt="Logo" className='w-full'/>

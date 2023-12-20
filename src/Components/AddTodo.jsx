@@ -11,8 +11,13 @@ const AddTodo = () => {
     // }
     const submitHandler=(e)=>{
         e.preventDefault();
-        dispatch(addTodo(input))
-        setinput(' ')
+        console.log(input);
+      
+            dispatch(addTodo(input))
+            setinput(' ')
+        
+            
+        
     }
   return (
     <div className='p-3 rounded-3xl addtaskShadow'>
@@ -23,13 +28,14 @@ const AddTodo = () => {
                     className='w-full p-2 rounded-full focus-visible:outline-none focus-visible:shadow-xl text-lg addtaskShadow'
                     placeholder='Add Task'
                     value={input}
+                    required
                     onChange={(e)=>setinput(e.target.value)}
                 />
                 {/* <button type='button' onClick={deleteHandler} className='bg-green-950 text-white p-5 absolute  right-2 top-1/2 -translate-y-1/2 rounded-full'>
                     Del
                 </button> */}
             </div>
-            <button type="submit" className='bg-green-950 px-5 py-2 text-white rounded-full shadow-lg mt-3'>
+            <button type="submit" className='bg-green-950 px-5 py-2 text-white rounded-full shadow-lg mt-3 transition-colors duration-300 border border-green-950 hover:bg-white hover:text-green-950 font-bold '>
                 Add Task
             </button>
         </form>

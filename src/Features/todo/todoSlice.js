@@ -2,8 +2,8 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
     todos: [{ id: 1, text: 'Welcome to Redux Toolkit' }],
-    completedTodos: [{ id: 0, text: "completed" }],
-    deletedTodos: [{ id: 0, text: 'deleted' }]
+    completedTodos: [{ id: 0, text: "completed",  }],
+    deletedTodos: [{ id: 0, text: 'disabled' }]
 }
 
 

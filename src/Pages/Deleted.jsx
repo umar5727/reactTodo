@@ -15,6 +15,7 @@ const Deleted = () => {
             Tname={todo.text}
             key={todo.id}
             id={todo.id}
+            disable='disabled'
             />
           
             ))

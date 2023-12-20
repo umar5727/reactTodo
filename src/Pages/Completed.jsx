@@ -16,6 +16,9 @@ const Completed = () => {
             key={todo.id}
             id={todo.id}
           checkeds ={ true}
+          disable='disabled'
+          check='defaultChecked'
+
             />
           
             ))
