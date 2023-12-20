@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const NavTask = (props) => {
+  console.log(props.navLink)
   return (
     <>
     <NavLink to={props.navLink}
