@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Container, Header, MainSection, SideSection, TaskHeader } from "./Components";
+import { Container, Header, MainSection, SideSection } from "./Components";
 // import { Container } from "postcss";
 
 const Layout = () => {

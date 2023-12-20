@@ -17,20 +17,20 @@ const SideSection = () => {
           src="/house-solid.svg"
           name="Home"
           counter={homeCount}
-          navLink=" "
+          navLink="/reactTodo/"
         />
      
         <NavTask
           src="/box-archive-solid.svg"
           name="completed"
           counter={completedCount}
-          navLink="/completed"
+          navLink="/reactTodo/completed"
         />
         <NavTask
           src="/trash-solid.svg"
           name="Deleted"
           counter={deletedCount}
-          navLink="/Deleted"
+          navLink="/reactTodo/deleted"
         />
       </div>
       {/* add task starts  */}
