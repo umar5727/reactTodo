@@ -14,20 +14,20 @@ const SideSection = () => {
     >
       <div className="sideSectionWrapper  py-3 ">
         <NavTask
-          src="/house-solid.svg"
+          src="house-solid.svg"
           name="Home"
           counter={homeCount}
           navLink="/reactTodo/"
         />
      
         <NavTask
-          src="/box-archive-solid.svg"
+          src="box-archive-solid.svg"
           name="completed"
           counter={completedCount}
           navLink="/reactTodo/completed"
         />
         <NavTask
-          src="/trash-solid.svg"
+          src="trash-solid.svg"
           name="Deleted"
           counter={deletedCount}
           navLink="/reactTodo/deleted"

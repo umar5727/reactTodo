@@ -34,7 +34,7 @@ const Task = (props) => {
           }
         
         }>
-          <img src="/trash-solid.svg" alt=""  className='w-4'/>
+          <img src="trash-solid.svg" alt=""  className='w-4'/>
         </div>
       </div>
     </div>
