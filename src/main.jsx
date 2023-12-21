@@ -2,11 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { Route, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import Layout from "./Layout.jsx";
-import MainSection from "./Components/MainSection.jsx";
-import Recent from "./Pages/Recent.jsx";
-import Archived from "./Pages/Archived.jsx";
 import Home from "./Pages/Home.jsx";
 import Deleted from "./Pages/Deleted.jsx";
 import { Provider } from "react-redux";
@@ -18,6 +15,7 @@ const router = createBrowserRouter(
       <Route path="/reactTodo/" element={<Home />} />
       <Route path="/reactTodo/completed" element={<Completed />} />
       <Route path="/reactTodo/deleted" element={<Deleted />} />
+      <Route path="/" element={<NotFound />} />
     </Route>
   )
 );
