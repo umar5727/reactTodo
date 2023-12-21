@@ -4,7 +4,7 @@ import { Task } from '../Components';
 import { useSelector } from 'react-redux';
 const Completed = () => {
   const completedTodo=useSelector(state=>state.completedTodos);
-  console.log(completedTodo)
+  // console.log(completedTodo)
 
   return (
     <div>

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import NavTask from "./NavTask";
 import AddTodo from "./AddTodo";
+import { useSelector } from "react-redux";
 
 const SideSection = () => {
-  const [homeCount, sethomeCount] = useState(0);
-  const [completedCount, setcompletedCount] = useState(0);
-  const [deletedCount, setDeletedCount] = useState(0);
+  // const [homeCount, sethomeCount] = useState(0);
+  // const [completedCount, setcompletedCount] = useState(0);
+  // const [deletedCount, setDeletedCount] = useState(0);
+  const homeCount = useSelector((state) => state.todos);
+  const completedCount=useSelector(state=>state.completedTodos);
+  const deletedCount=useSelector(state=>state.deletedTodos);
   return (
     // fixed top-24 left-0 ml-6
     <section 
@@ -16,20 +20,20 @@ const SideSection = () => {
         <NavTask
           src="house-solid.svg"
           name="Home"
-          counter={homeCount}
+          counter={homeCount.length}
           navLink="/reactTodo/"
         />
      
         <NavTask
           src="box-archive-solid.svg"
           name="completed"
-          counter={completedCount}
+          counter={completedCount.length}
           navLink="/reactTodo/completed"
         />
         <NavTask
           src="trash-solid.svg"
           name="Deleted"
-          counter={deletedCount}
+          counter={deletedCount.length}
           navLink="/reactTodo/deleted"
         />
       </div>
