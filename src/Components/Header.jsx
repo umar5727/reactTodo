@@ -9,7 +9,7 @@ const Header = () => {
     <header className='fixed top-0 left-0 right-6 h-24 ml-6 flex items-center justify-between px-5 bg-white z-50'>
       <div className='flex items-center gap-5'>
         <div className="logo w-8">
-          <img src="/mainLogo.png" alt="Logo" className='w-full'/>
+          <img src="mainLogo.png" alt="Logo" className='w-full'/>
         </div>
         <h1 className='text-3xl font-bold text-green-400'>Task</h1>
       </div>
