@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 const NotFound = () => {
   return (
     <div>
-     <h1>
+     <h1 className='font-extrabold text-3xl '>
     Page Not Found Try
         
-    </h1>   
-    <Link to='/reactTodo/' >
+    <Link to='/reactTodo/'  className='underline text-lg font-bold text-blue-900 italic ps-1'>
         Task       
     </Link>
+    </h1>   
     </div>
   )
 }

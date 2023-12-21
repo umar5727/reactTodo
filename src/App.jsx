@@ -1,5 +1,5 @@
-// import { useState } from "react";
-// import "./App.css";
+import { useState } from "react";
+import "./App.css";
 
 // import {
 //   Route,
@@ -12,7 +12,7 @@
 // import Completed from "./Pages/Completed";
 // import Deleted from "./Pages/Deleted";
 
-// function App() {
+function App() {
 //   const [count, setCount] = useState(0);
 //   const Router = createBrowserRouter(
 //     createRoutesFromElements(
@@ -24,13 +24,11 @@
 //     )
 //   );
 
-//   return (
-//     <>
-//       <div className="main w-full h-full">
-//         <RouterProvider router={Router} />
-//       </div>
-//     </>
-//   );
-// }
+  return (
+    <>
 
-// export default App;
+     </>
+  );
+}
+
+export default App;

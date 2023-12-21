@@ -9,13 +9,14 @@ import Deleted from "./Pages/Deleted.jsx";
 import { Provider } from "react-redux";
 import {Store} from './App/Store/Store'
 import Completed from "./Pages/Completed.jsx";
+import NotFound from "./Pages/NotFound.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/reactTodo/" element={<Layout />}>
       <Route path="/reactTodo/" element={<Home />} />
       <Route path="/reactTodo/completed" element={<Completed />} />
       <Route path="/reactTodo/deleted" element={<Deleted />} />
-      <Route path="/" element={<NotFound />} />
+      <Route path="/reactTodo/*" element={<NotFound />} />
     </Route>
   )
 );
